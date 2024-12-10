@@ -1,1 +1,2 @@
-a macro for the game py++ and for Raspberry pi pico 1 it is mint to be used with circuitpython and you will have to git adafruit_hid library. You should have the game in the home directory on linx. The password "hi" Username "py" and tmux install.
+A macro for the terminal game Py++. The macro is designed to be ran with CircutPython on a Raspberry Pi Pico 1. It also requires the adafruit_hid library. You should have Py++ located in a folder named "py++". You also need tmux installed.
+
