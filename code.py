@@ -15,7 +15,11 @@ import random
 #        __/ |
 #       |___/
 # config start
+start_delay = 5.555
 log_in = True
+if log_in == True:
+    username = "py"
+    password = "hi"
 fan_max = True
 # chip chipper
 chip_chipper_repeat_all = 3
@@ -24,12 +28,13 @@ chip_chipper_cash_repeat = 100
 chip_chipper_repeat_amount = 3
 chip_chiper_multiplication = 50
 chip_chipper_start_multiplication_amount = 1
-qtc = 20
+quintillion_point_chance = 20
 chip_chipper_repeat_amount_qt = 49
+chosen_chip_of_buying = "r"
 # trivia plus plus
 trivia_repeat = 6000
 # config end
-# V 1.8                      by rocklake
+# V 1.9                      by rocklake
 # 1.3
 #  |
 # \_/
@@ -40,14 +45,14 @@ trivia_repeat = 6000
 kbd = Keyboard(usb_hid.devices)
 layout = KeyboardLayoutUS(kbd)
 while True:
-    time.sleep(5.555)
+    time.sleep(start_delay)
     try:
         if log_in == True:
-            layout.write("py")
+            layout.write(username)
             kbd.press(Keycode.ENTER)
             kbd.release_all()
             time.sleep(0.4)
-            layout.write("hi")
+            layout.write(password)
             kbd.press(Keycode.ENTER)
             kbd.release_all()
             time.sleep(1)
@@ -155,7 +160,7 @@ while True:
             count2 = 0
             gcount = 0
             coun = 0
-            qt = random.randint(0, int(qtc))
+            qt = random.randint(0, int(quintillion_point_chance))
             qt = int(qt)
             while count1 <= int(trivia_repeat):
                 layout.write("8")
@@ -199,7 +204,7 @@ while True:
                 kbd.release_all()
                 r = chip_chipper_start_multiplication_amount
                 while count2 <= int(chip_chipper_repeat_amount):
-                    layout.write("r")
+                    layout.write(chosen_chip_of_buying)
                     kbd.press(Keycode.ENTER)
                     kbd.release_all()
                     r = r + r * chip_chiper_multiplication
@@ -250,7 +255,7 @@ while True:
                     kbd.release_all()
                     r = chip_chipper_start_multiplication_amount
                     while count2 <= int(chip_chipper_repeat_amount_qt):
-                        layout.write("r")
+                        layout.write(chosen_chip_of_buying)
                         kbd.press(Keycode.ENTER)
                         kbd.release_all()
                         r = r + r * chip_chiper_multiplication
