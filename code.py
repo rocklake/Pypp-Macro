@@ -8,10 +8,10 @@ from board import *
 import random
 # _____
 #|  __ \        _     _
-#| |__) |   _ _| |_ _| |_   _ __ ___   __ _  ___ _ __ ___
-#|  ___/ | | |_   _|_   _| | '_ ` _ \ / _` |/ __| '__/ _ \
-#| |   | |_| | |_|   |_|   | | | | | | (_| | (__| | | (_)
-#|_|    \__, |             |_| |_| |_|\__,_|\___|_|  \___/
+#| |__) |   _ _| |_ _| |_     _ __ ___   __ _  ___ _ __ ___
+#|  ___/ | | |_   _|_   _|   | '_ ` _ \ / _` |/ __| '__/ _ \
+#| |   | |_| | |_|   |_|     | | | | | | (_| | (__| | | (_)
+#|_|    \__, |               |_| |_| |_|\__,_|\___|_|  \___/
 #        __/ |
 #       |___/
 # config start
@@ -21,6 +21,7 @@ if log_in == True:
     username = "py"
     password = "hi"
 fan_max = True
+# Options are "off", "low", "min", "max". Change to a higher setting if on a slower computer.
 slowdown_level = "off"
 # chip chipper
 chip_chipper_repeat_all = 3
