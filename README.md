@@ -1,6 +1,21 @@
-A macro for the terminal game Py++.
+<h1 align="center">Pycro</h1>
 
-Requirements:
+<div align="center">
+  
+  <strong>A macro for the terminal game Py++</strong>
+</div>
+
+
+<div align="center">
+  
+![GitHub License](https://img.shields.io/github/license/rocklake/Pypp-Macro)
+![GitHub forks](https://img.shields.io/github/forks/rocklake/Pypp-macro)
+![GitHub Repo stars](https://img.shields.io/github/stars/rocklake/Pypp-macro)
+
+</div>
+
+
+## Requirements:
              
   Device the macro will be plugged into:
   
