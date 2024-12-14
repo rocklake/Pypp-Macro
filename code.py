@@ -33,7 +33,7 @@ chip_chipper_start_multiplication_amount = 1
 quintillion_point_chance = 36
 chip_chipper_repeat_amount_qt = 49
 chosen_chip_of_buying = "r"
-# trivia plus plus
+# trivia++
 trivia_repeat = 6000
 # config end
 # V 2                      by rocklake
@@ -380,4 +380,4 @@ while True:
             gcount = 0
 
     except:
-        print("fall")
+        print("fail")
