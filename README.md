@@ -1,9 +1,7 @@
 A macro for the terminal game Py++.
 
 Requirements:
-
-
-  
+             
   Device the macro will be plugged into:
   
     Linux (Debian-based, preferably Raspbian)
