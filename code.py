@@ -8,14 +8,16 @@ from board import *
 import random
 # _____
 #|  __ \        _     _
-#| |__) |   _ _| |_ _| |_     _ __ ___   __ _  ___ _ __ ___
-#|  ___/ | | |_   _|_   _|   | '_ ` _ \ / _` |/ __| '__/ _ \
-#| |   | |_| | |_|   |_|     | | | | | | (_| | (__| | | (_)
-#|_|    \__, |               |_| |_| |_|\__,_|\___|_|  \___/
+#| |__) |   _ _| |_ _| |_   _ __ ___   __ _  ___ _ __ ___
+#|  ___/ | | |_   _|_   _| | '_ ` _ \ / _` |/ __| '__/ _ \
+#| |   | |_| | |_|   |_|   | | | | | | (_| | (__| | | (_)
+#|_|    \__, |             |_| |_| |_|\__,_|\___|_|  \___/
 #        __/ |
 #       |___/
+
+
 # config start
-start_delay = 5.555
+start_delay = 0
 log_in = True
 if log_in == True:
     username = "py"
@@ -33,10 +35,12 @@ chip_chipper_start_multiplication_amount = 1
 quintillion_point_chance = 36
 chip_chipper_repeat_amount_qt = 49
 chosen_chip_of_buying = "r"
-# trivia++
+# trivia plus plus
 trivia_repeat = 6000
 # config end
-# V 2                      by rocklake
+
+
+# V 2.1                      by rocklake
 # 1.3
 #  |
 # \_/
@@ -44,6 +48,8 @@ trivia_repeat = 6000
 # rb_cc in a hour            12.575
 # bot_points in a hour       795.694
 # all points in a hour is    338.282
+
+
 kbd = Keyboard(usb_hid.devices)
 layout = KeyboardLayoutUS(kbd)
 def slowdown(level1):
@@ -74,6 +80,9 @@ def slowdown(level1):
             time.sleep(0.4)
         elif slowdown_level == "off":
             pass
+cap = kbd.led_on(Keyboard.LED_CAPS_LOCK)
+while cap == True:
+    cap = kbd.led_on(Keyboard.LED_CAPS_LOCK)
 while True:
     time.sleep(start_delay)
     try:
@@ -97,98 +106,118 @@ while True:
         kbd.press(Keycode.SPACE)
         kbd.release_all()
         slowdown("h")
+         
         kbd.press(Keycode.CONTROL)
         kbd.press(Keycode.B)
         kbd.press(Keycode.SHIFT)
         layout.write("%")
         kbd.release_all()
         slowdown("l")
+         
         kbd.press(Keycode.CONTROL)
         kbd.press(Keycode.B)
         kbd.press(Keycode.SHIFT)
         layout.write("%")
         kbd.release_all()
         slowdown("l")
+         
         kbd.press(Keycode.CONTROL)
         kbd.press(Keycode.B)
         kbd.press(Keycode.SHIFT)
         layout.write(":")
         kbd.release_all()
         slowdown("l")
+         
         layout.write("setw synchronize-panes on")
         kbd.press(Keycode.ENTER)
         kbd.release_all()
         slowdown("l")
+         
         layout.write("cd py++")
         kbd.press(Keycode.ENTER)
         kbd.release_all()
         slowdown("l")
+         
         layout.write("python3 py++_start.py")
         kbd.press(Keycode.ENTER)
         kbd.release_all()
         slowdown("m")
+         
         # in py++
 
         kbd.press(Keycode.ENTER)
         kbd.release_all()
         slowdown("l")
+         
         kbd.press(Keycode.CONTROL)
         kbd.press(Keycode.B)
         kbd.press(Keycode.SHIFT)
         layout.write(":")
         kbd.release_all()
         slowdown("l")
+         
         layout.write("setw synchronize-panes off")
         kbd.press(Keycode.ENTER)
         kbd.release_all()
         slowdown("m")
+         
         # going to trivia
         layout.write("3")
         kbd.press(Keycode.ENTER)
         kbd.release_all()
         slowdown("l")
+         
         layout.write("e")
         kbd.press(Keycode.ENTER)
         kbd.release_all()
         slowdown("l")
+         
         kbd.press(Keycode.CONTROL)
         kbd.press(Keycode.B)
         kbd.press(Keycode.LEFT_ARROW)
         kbd.release_all()
         slowdown("m")
+         
         # going to bot
         layout.write("5")
         kbd.press(Keycode.ENTER)
         kbd.release_all()
         slowdown("l")
+         
         layout.write("l")
         kbd.press(Keycode.ENTER)
         kbd.release_all()
         slowdown("l")
+         
         kbd.press(Keycode.CONTROL)
         kbd.press(Keycode.B)
         kbd.press(Keycode.LEFT_ARROW)
         kbd.release_all()
         slowdown("m")
+         
         # to chip chipper
         layout.write("2")
         kbd.press(Keycode.ENTER)
         kbd.release_all()
         slowdown("l")
+         
         layout.write("l")
         kbd.press(Keycode.ENTER)
         kbd.release_all()
         slowdown("l")
+         
         kbd.press(Keycode.CONTROL)
         kbd.press(Keycode.B)
         kbd.press(Keycode.RIGHT_ARROW)
         kbd.release_all()
         slowdown("l")
+         
         kbd.press(Keycode.CONTROL)
         kbd.press(Keycode.B)
         kbd.press(Keycode.RIGHT_ARROW)
         kbd.release_all()
         slowdown("l")
+         
 
         kbd.press(Keycode.CONTROL)
         kbd.press(Keycode.B)
@@ -196,6 +225,7 @@ while True:
         layout.write(":")
         kbd.release_all()
         slowdown("m")
+         
         layout.write("setw synchronize-panes on")
         kbd.press(Keycode.ENTER)
         kbd.release_all()
@@ -220,15 +250,18 @@ while True:
             layout.write(":")
             kbd.release_all()
             slowdown("m")
+             
             layout.write("setw synchronize-panes off")
             kbd.press(Keycode.ENTER)
             kbd.release_all()
             slowdown("l")
+             
             kbd.press(Keycode.CONTROL)
             kbd.press(Keycode.B)
             kbd.press(Keycode.LEFT_ARROW)
             kbd.release_all()
             slowdown("l")
+             
             kbd.press(Keycode.CONTROL)
             kbd.press(Keycode.B)
             kbd.press(Keycode.LEFT_ARROW)
@@ -238,10 +271,12 @@ while True:
                 kbd.press(Keycode.ENTER)
                 kbd.release_all()
                 slowdown("l")
+                 
                 layout.write("1")
                 kbd.press(Keycode.ENTER)
                 kbd.release_all()
                 slowdown("l")
+                 
                 layout.write("g")
                 kbd.press(Keycode.ENTER)
                 kbd.release_all()
@@ -254,18 +289,21 @@ while True:
                 kbd.press(Keycode.ENTER)
                 kbd.release_all()
                 slowdown("l")
+                 
                 r = chip_chipper_start_multiplication_amount
                 while count2 <= int(chip_chipper_repeat_amount):
                     layout.write(chosen_chip_of_buying)
                     kbd.press(Keycode.ENTER)
                     kbd.release_all()
                     slowdown("l")
+                     
                     r = r + r * chip_chiper_multiplication
                     r = int(r)
                     layout.write(str(r))
                     kbd.press(Keycode.ENTER)
                     kbd.release_all()
                     slowdown("l")
+                     
                     layout.write("g")
                     kbd.press(Keycode.ENTER)
                     kbd.release_all()
@@ -282,27 +320,33 @@ while True:
                 kbd.press(Keycode.ENTER)
                 kbd.release_all()
                 slowdown("l")
+                 
                 layout.write("s")
                 kbd.press(Keycode.ENTER)
                 kbd.release_all()
                 slowdown("l")
+                 
                 count1 = 0
                 count2 = 0
                 gcount = 0
                 slowdown("l")
+                 
                 if qt == 1:
                     layout.write("b")
                     kbd.press(Keycode.ENTER)
                     kbd.release_all()
                     slowdown("l")
+                     
                     layout.write("1")
                     kbd.press(Keycode.ENTER)
                     kbd.release_all()
                     slowdown("l")
+                     
                     layout.write("g")
                     kbd.press(Keycode.ENTER)
                     kbd.release_all()
                     slowdown("l")
+                     
                     while gcount <= chip_chipper_start_amount:
                         kbd.press(Keycode.ENTER)
                         kbd.release_all()
@@ -312,6 +356,7 @@ while True:
                     kbd.press(Keycode.ENTER)
                     kbd.release_all()
                     slowdown("l")
+                     
                     r = chip_chipper_start_multiplication_amount
                     while count2 <= int(chip_chipper_repeat_amount_qt):
                         layout.write(chosen_chip_of_buying)
@@ -324,10 +369,12 @@ while True:
                         kbd.press(Keycode.ENTER)
                         kbd.release_all()
                         slowdown("l")
+                         
                         layout.write("g")
                         kbd.press(Keycode.ENTER)
                         kbd.release_all()
                         slowdown("l")
+                         
                         while gcount <= chip_chipper_cash_repeat:
                             kbd.press(Keycode.ENTER)
                             kbd.release_all()
@@ -336,6 +383,7 @@ while True:
                         kbd.press(Keycode.ENTER)
                         kbd.release_all()
                         slowdown("l")
+                         
                         gcount = 0
                         count2 = count2 + 1
                         d = 0
@@ -344,36 +392,44 @@ while True:
                         kbd.press(Keycode.ENTER)
                         kbd.release_all()
                         slowdown("l")
+                         
                         layout.write("g")
                         kbd.press(Keycode.ENTER)
                         kbd.release_all()
                         slowdown("l")
+                         
                         kbd.press(Keycode.ENTER)
                         kbd.release_all()
                         slowdown("l")
+                         
                         layout.write("e")
                         kbd.press(Keycode.ENTER)
                         kbd.release_all()
                         d = d + 1
                 coun = coun + 1
                 slowdown("l")
+                 
             kbd.press(Keycode.CONTROL)
             kbd.press(Keycode.B)
             kbd.press(Keycode.RIGHT_ARROW)
             kbd.release_all()
             slowdown("l")
+             
             kbd.press(Keycode.CONTROL)
             kbd.press(Keycode.B)
             kbd.press(Keycode.RIGHT_ARROW)
             kbd.release_all()
             slowdown("l")
+             
             kbd.press(Keycode.CONTROL)
             kbd.press(Keycode.B)
             slowdown("l")
+             
             kbd.press(Keycode.SHIFT)
             layout.write(":")
             kbd.release_all()
             slowdown("m")
+             
             layout.write("setw synchronize-panes on")
             kbd.press(Keycode.ENTER)
             kbd.release_all()
