@@ -33,3 +33,5 @@
   
 
 This project was inspired by an old version of Pico-Ducky.
+## How to use:
+  To swap files make sure cap lock is enabled so that the macro does not run, this will only work on 2.1 or later.
