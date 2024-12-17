@@ -41,13 +41,14 @@ trivia_repeat = 6000
 
 
 # V 2.1                      by rocklake
-# 1.3
+# 2.1
 #  |
 # \_/
-# triva coin in a hour       3,312.373
-# rb_cc in a hour            12.575
-# bot_points in a hour       795.694
-# all points in a hour is    338.282
+# triva coin in a hour       2,901.716
+# rb_cc in a hour            46.213
+# bot_points in a hour       711.479
+# qt points an hour          2798351101696786e59
+# all points in a hour is    384.5976
 
 
 kbd = Keyboard(usb_hid.devices)
