@@ -34,7 +34,7 @@
 
 This project was inspired by an old version of Pico-Ducky.
 ## How to use: 
-###switch file 
+### switch file 
 To switch the file make sure cap lock is enabled. This will stop the background from running. 
 ## All the variables: 
 ### start_delay  
@@ -64,7 +64,7 @@ after the macro switches to a chip chipper submode rebirth, this is how many of 
 ### chip_chiper_multiplication 
 Type Int 0 - ∞ 
 after buying and selling of any chips and chip chipper for previous buying amount would be multiplied by this number to get that new buying about. 
-###c hip_chipper_start_multiplication_amount 
+### chip_chipper_start_multiplication_amount 
 Type Int 0 - ∞ 
 at the beginning of submode this number will be multiplied with chip_chiper_multiplication to get the proper buying amount. 
 ### quintillion_point_chance 
